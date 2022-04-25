@@ -1,0 +1,20 @@
+10:47:30,203 TRACE HelloWorldClient:22 - Retrieved SessionFactory
+10:47:30,209 TRACE HelloWorldClient:25 - Begun Transaction
+10:47:30,228 DEBUG SQL:103 - insert into message (TEXT) values (?)
+10:47:30,249 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Hello again from annotations-logging-ALL]
+10:47:30,294 TRACE HelloWorldClient:30 - Successfully save message
+10:47:30,302 TRACE HelloWorldClient:33 - Transaction committed
+11:47:38,634 TRACE HelloWorldClient:22 - Retrieved SessionFactory
+11:47:38,637 TRACE HelloWorldClient:25 - Begun Transaction
+11:47:38,648 DEBUG SQL:103 - insert into message (TEXT) values (?)
+11:47:38,671 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Hello again from annotations-logging-ALL]
+11:47:38,679 TRACE HelloWorldClient:30 - Successfully save message
+11:47:38,684 TRACE HelloWorldClient:33 - Transaction committed
+11:48:21,179 DEBUG SQL:103 - select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+11:48:21,193 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [21]
+11:48:54,553 DEBUG SQL:103 - select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+11:48:54,568 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [21]
+11:49:49,694 DEBUG SQL:103 - select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+11:49:49,708 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [22]
+11:49:58,199 DEBUG SQL:103 - select message0_.ID as ID1_0_0_, message0_.TEXT as TEXT2_0_0_ from message message0_ where message0_.ID=?
+11:49:58,215 TRACE BasicBinder:65 - binding parameter [1] as [BIGINT] - [22]

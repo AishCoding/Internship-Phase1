@@ -1,0 +1,27 @@
+13:02:49,762 DEBUG SQL:103 - 
+    
+    create table Person (
+       id bigint not null auto_increment,
+        billing_city varchar(255),
+        billing_street varchar(255),
+        billing_zipcode varchar(255),
+        home_city varchar(255),
+        home_street varchar(255),
+        home_zipcode varchar(255),
+        name varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+13:02:49,923 DEBUG SQL:103 - 
+    insert 
+    into
+        Person
+        (billing_city, billing_street, billing_zipcode, home_city, home_street, home_zipcode, name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+13:02:49,929 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [NY]
+13:02:49,929 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [1 Wall Street]
+13:02:49,930 TRACE BasicBinder:65 - binding parameter [3] as [VARCHAR] - [400012]
+13:02:49,931 TRACE BasicBinder:65 - binding parameter [4] as [VARCHAR] - [NJ]
+13:02:49,931 TRACE BasicBinder:65 - binding parameter [5] as [VARCHAR] - [2 Main Street]
+13:02:49,932 TRACE BasicBinder:65 - binding parameter [6] as [VARCHAR] - [80912]
+13:02:49,932 TRACE BasicBinder:65 - binding parameter [7] as [VARCHAR] - [max]
